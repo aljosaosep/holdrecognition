@@ -1,0 +1,28 @@
+﻿            // razpoznava stirikotnikov
+          /*  using (MemStorage shramba2 = new MemStorage())
+            for (Contour<Point> konture = cannyEdges.FindContours(); konture != null; konture = konture.HNext)
+            {
+                Contour<Point> trenutna = konture.ApproxPoly(konture.Perimeter * 0.05, shramba2);
+                if (konture.Area > 300 && trenutna.Total == 4)
+                {
+                    bool jePravokotnik = true;
+                    Point[] tocke = trenutna.ToArray();
+                    LineSegment2D[] roboviPravokotnika = PointCollection.PolyLine(tocke, true);
+
+                    for (int i = 0; i < roboviPravokotnika.Length; i++)
+                    {
+                        double kot = Math.Abs(roboviPravokotnika[(i + 1) % roboviPravokotnika.Length].GetExteriorAngleDegree(roboviPravokotnika[i]));
+
+                        if (kot < 70 || kot > 110)
+                        {
+                            jePravokotnik = false;
+                            break;
+                        }
+                    }
+
+                  //  trenutna.
+                    if (jePravokotnik) pravokotniki.Add(trenutna.GetMinAreaRect());
+                }
+             }*/
+
+          //  grayImage = capturedImage.Convert<Gray, Byte>().PyrUp().PyrDown();
